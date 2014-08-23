@@ -62,11 +62,13 @@ fBodyGyroscopeJerkMagnitudeMeanFrequency | The mean frequency obtained by the we
 All the variables which are broken down into three components along the three axes carry the same defination as defined in the table above. It is just a component of the measured vector value.
 For example : tBodyAccelerationMeanX means tBodyAccelerationMean along the x-axis. Hence it is a component of the main vector. Similarly for y & z axis.
 
-### Variable field width and Range of values
+### Variable field width and Range of values and Units
 * The subject is a number ranging from 1:30. Hence its variable firld width is 2. And range of values is 1:30
 
 * The activity is a character vector with six possible values described in the above table. Hence its variable field width is between minimum and maximum of the activities. Its range of values is 6 character values.
 
 * The rest of the variables were recorded with a very high precision and after applying the transformations the precision was reserved. Hence the field width is same as in the original data i.e 15:16 and range of values is [-1,1], which is the normalized value of the measurements.
+
+#### All the feature variables are unitless as they are normalized values of the actual measurement. That means they are divided by a normalising factor which has the same unit as the measurement itself. This results in the unitless normalized values.
 
 ### Transformations applied to the dataset is described in the README.md file and the script in run_analysis.R
